@@ -1,8 +1,53 @@
+<!DOCTYPE html>
 <html>
   <head>
     <title>Matsuo</title>
+    <link rel="stylesheet" href="./css/base.css">
+    <script type="text/javascript" async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=MML_SVG"></script>
   </head>
-  <body>
-    <h1>Matsuo</h1>
-  </body>
+<body>
+<h1>Matuo Keita</h1>
+<p id="demo"></p>
+
+<script>
+let i = 0;
+const txt = "Hello Everyone. My name is Matsuo Keita. I'm software engineer. This is my diary. Which day's diary would you like to read? April 7th,2023 I learned how to put formulas on the site like this.";
+const speed = 100;
+
+const typeWriter = () => {
+  if (i < txt.length) {
+    document.getElementById("demo").innerHTML += txt.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
+  }
+}
+typeWriter();
+</script>
+<math>
+  <mo>{</mo>
+  <mtable>
+    <mtr>
+      <mtd>
+        <mn>2</mn>
+        <mi>x</mi>
+        <mo>-</mo>
+        <mi>y</mi>
+        <mo>=</mo>
+        <mn>1</mn>
+      </mtd>
+    </mtr>
+    <mtr>
+      <mtd>
+        <mi>x</mi>
+        <mo>+</mo>
+        <mn>2</mn>
+        <mi>y</mi>
+        <mo>=</mo>
+        <mn>8</mn>
+      </mtd>
+    </mtr>
+  </mtable>
+</math>
+</body>
 </html>
